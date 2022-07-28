@@ -1,0 +1,304 @@
+Data Types:
+----------
+
+Type of data to be stored into the memory location.
+
+ int , char , float ,String  , Object 
+
+ 10, 'a' , 10.9 , "sachin" , new Demo();
+
+
+
+ Diffrent Sizes
+----------------
+
+  byte  , short , int  , long  -> Integer data  (-ve to +ve with out any decimal value)
+ 
+  byte - 1 byte
+  short - 2 bytes
+  int - 4  bytes
+  long -8  bytes
+
+
+   Different value (range):
+-------------------
+
+  byte (-128 0 +127)
+  short (-30000 0 +300000)
+
+   
+  Statically typed programming lang:
+-------------------------------------
+ 
+ Each Variable or expression type is known at compile time.
+ once variable is decalred we have add the datatype 
+
+ For example:
+ C , C++  , Java
+
+
+  Dynamically typed programming lang:
+--------------------------------------
+
+  Python
+
+
+
+Strongly typed programming lang:
+--------------------------------
+
+for each of type of data we have data types specified as part the programming language.
+
+ integer data types
+ 
+ Floating data types
+
+ Charcater data types
+
+ Strings
+
+ Boolean data types (true / false)
+
+ Object
+
+
+Data Types:
+
+
+Primtive datatypes/Fundamental data Types:
+------------------------------------------
+
+Stores only single value
+
+
+byte
+short
+int
+long
+float
+double
+boolean
+char
+
+
+
+Non primtive data types / Object data types:
+-----------------------
+
+More than one value
+
+String
+Array .. etc
+
+
+Integer category    (-ve to +ve without any decimal value)
+-----------------
+byte
+short
+int
+long
+
+Floating Point category:(-ve to +ve with  decimal value)
+--------------------------
+float
+double
+
+Boolean Category: (if we want to store true / false)
+------------------
+boolean
+
+Charcter Category: (If we want to store Single charcter)
+------------------
+char
+
+
+All the data types are Keywords in Java including true or false 
+All the keywords/Reserved words should be written in small case letter.
+
+Note:
+We cannot use keywords as a classname/variable or as an Identifier
+
+
+Integer category:
+--------------
+
+  byte  Data type
+-------------------
+
+  type : byte
+  size : 1 byte
+  range: -128 0 +127
+  default value: 0
+
+  1 byte =  8 bits
+         = 256 /2    -128  0 +127
+
+
+
+Synatx to use datatypes:
+-------------------------
+
+ <datatype>  <variablename>  =  <value >
+
+ex:
+    byte age =10;
+    boolean result = false;
+    char grade='A';
+    double amount = 10000.0;
+
+
+Ex:
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+			
+		byte  age = 10;
+		System.out.println("Age is :"+age);
+		
+	}
+
+}
+
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+
+		byte age = 126;
+		System.out.println("Age is :" + age);
+		age++;
+		System.out.println("Age after 1 yr :" + age);
+		age++;
+		System.out.println("Age after 2 yr :" + age);
+		age++;
+		System.out.println("Age after 2 yr :" + age);
+	}
+
+}
+
+
+Result:
+
+Age is :126
+Age after 1 yr :127
+Age after 2 yr :-128
+Age after 2 yr :-127
+
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+
+		byte age = 128;
+		System.out.println("Age is :" + age);
+	}
+
+}
+
+CE:
+---
+
+Type mismatch: cannot convert from int to byte
+
+short datatype;
+------------------
+
+ datatype : short
+ size     : 2 bytes
+ Range	   : -32768 0 + 32767
+ default value ; 0
+
+
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+
+		short  id = 32000;
+		System.out.println("ID is :" + id);
+	}
+
+}
+
+
+int datatype:
+-------------
+
+datatype : int 
+size     : 4 bytes
+range:
+Default value : 0
+
+Under Integer category int is default type
+Default datatype : int
+
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+
+		System.out.println(100);
+	}
+
+}
+
+
+long data type:
+---------------
+
+data type : long
+size :  8 bytes
+range:
+Default :0
+
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+
+		long trackingId = 1345567L;
+		System.out.println("trackingId :"+trackingId);
+	}
+
+}
+
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+
+		long trackingId = 1345567l;
+		System.out.println("trackingId :"+trackingId);
+	}
+
+}
+
+
+
+Boolean data type:
+------------------
+
+  type : boolean
+  size : JVM dependent
+  values : true , false
+  default value : false
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+
+	
+		boolean result = true;
+		
+		if(result)
+			System.out.println("passed");
+		else
+			System.out.println("failed");
+	}
+
+}
+
+
+
+ 
